@@ -1,0 +1,36 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 37vh;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .center-content {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    
+  }
+  
+  .form-control {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  

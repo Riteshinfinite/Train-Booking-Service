@@ -1,0 +1,7 @@
+/* styles.css */
+
+.bg-image {
+    background-image: url('https://images.indianexpress.com/2018/05/irctc_indian_railway_engine.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

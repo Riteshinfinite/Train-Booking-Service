@@ -1,0 +1,79 @@
+/* 
+.train-details-form {
+    width: 400px;
+    margin: auto;
+    background-color: rgb(162, 162, 219);
+  }
+  
+  .train-details-form div {
+    margin-bottom: 10px;
+  }
+  
+  .train-details-form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .train-details-form input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   */
+
+   body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    margin-left: 300px;
+    padding: 0;
+    background-color: rgb(162, 162, 219);
+    width: 700px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .train-details-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns in one row */
+    gap: 40px; /* Gap between grid items */
+  }
+  
+  .grid-item {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

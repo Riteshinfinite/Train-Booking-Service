@@ -1,0 +1,75 @@
+  <div class="booking-details">
+    <h3>Book Your Seat</h3>
+    <div *ngFor="let train of trainDetailsList" class="train-box">
+        <tr>
+          <td>
+            <h4>Train Number: {{ train.trainnumber }}</h4>
+          </td>
+          <td>
+            <p>Train Name: {{ train.trainname }}</p>
+          </td>
+          <td>
+            <p>Runs On: M T W T F S S </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="button-group">
+              <button [routerLink]="['/passenger-details-form']" 
+              [queryParams]="{ trainNumber: train.trainnumber,
+                 AvailableSeats: train.avlSlpNonAcgen,
+                 source: train.source,
+                 destination: train.destination,
+                 date: train.date,
+                 chosenClass: 'SlpNonAcgen',
+                 fare: train.avlSlNonAcFare }">
+                <p>Gen Sl Avl:{{ train.avlSlpNonAcgen }}</p>
+                <p>Fare: {{ train.avlSlNonAcFare }}</p>
+                <p>Book now</p>
+              </button>
+              <button [routerLink]="['/passenger-details-form']" 
+              [queryParams]="{ trainNumber: train.trainnumber,
+                AvailableSeats: train.avlSlNonAcladies,
+                 source: train.source,
+                 destination: train.destination,
+                 date: train.date,
+                 chosenClass: 'SlNonAcladies',
+                 fare: train.avlSlNonAcFare }">
+                <p>lad Sl Avl:{{ train.avlSlNonAcladies }}</p>
+                <p>Fare: {{ train.avlSlNonAcFare }}</p>
+                <p>Book now</p>
+              </button>
+            </div>
+          </td>
+          <td>
+            <div class="button-group">
+              <button [routerLink]="['/passenger-details-form']" 
+              [queryParams]="{ trainNumber: train.trainnumber,
+                AvailableSeats: train.avlSlAcgen,
+                 source: train.source,
+                 destination: train.destination,
+                 date: train.date,
+                 chosenClass: 'SlAcgen',
+                 fare: train.avlSlAcFare }">
+                <p>Gen Sl ACAvl:{{ train.avlSlAcgen }}</p>
+                <p>Fare: {{ train.avlSlAcFare }}</p>
+                <p>Book now</p>
+              </button>
+              <button [routerLink]="['/passenger-details-form']" 
+              [queryParams]="{ trainNumber: train.trainnumber,
+                AvailableSeats: train.avlSLAcLadies,
+                 source: train.source,
+                 destination: train.destination,
+                 date: train.date,
+                 chosenClass: 'SLAcLadies',
+                 fare: train.avlSlAcFare  }">
+                <p>lad Sl ACAvl:{{ train.avlSLAcLadies }}</p>
+                <p>Fare: {{  train.avlSlAcFare }}</p>
+                <p>Book now</p>
+              </button>
+            </div>
+          </td>
+        </tr>
+    </div>
+  </div>
+  

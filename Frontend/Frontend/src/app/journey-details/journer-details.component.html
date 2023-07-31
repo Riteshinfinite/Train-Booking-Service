@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="ticket-details">
+    <div  #ticketContainer>
+      <h2>Ticket Details</h2>
+      <div class="ticket-detail">
+        <strong>Passengers:</strong>
+        <ul>
+          <li *ngFor="let passenger of ticketDetails.passengers">
+            {{ passenger.name }} ({{ passenger.age }} years, {{ passenger.gender }})
+          </li>
+        </ul>
+      </div>
+      
+      <div class="ticket-detail">
+        <strong>Source:</strong> {{ ticketDetails.source }}
+      </div>
+  
+      <div class="ticket-detail">
+        <strong>Destination:</strong> {{ ticketDetails.destination }}
+      </div>
+  
+      <div class="ticket-detail">
+        <strong>Date:</strong> {{ ticketDetails.date }}
+      </div>
+  
+      <div class="ticket-detail">
+        <strong>Train Number:</strong> {{ ticketDetails.trainNumber }}
+      </div>
+  
+      <div class="ticket-detail">
+        <strong>Class:</strong> {{ ticketDetails.chosenClass }}
+      </div>
+    </div>
+
+    <div class="buttons-container">
+        <button class="btn btn-primary" (click)="printTicket()">Print</button>
+        <button class="btn btn-success" (click)="downloadTicket()">Download PDF</button>
+        <button class="btn btn-primary" routerLink="/">Home page</button>
+    </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,24 @@
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <tr class="navbar-nav ml-auto">
+        <td class="nav-item">
+          <a class="nav-link" routerLink="/register">Register</a>
+        </td>
+        <td *ngIf="login" class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </td>
+        <td *ngIf="!login" class="nav-item">
+          <a class="nav-link" routerLink="/login" (click)=logout()>Logout</a>
+        </td>
+
+        <td class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </td>
+      <!-- <td class="nav-item">
+        <a class="nav-link" routerLink="/adminlogin">Admin Login</a>
+      </td> -->
+      </tr>
+    </div>
+  </div>
+</nav>

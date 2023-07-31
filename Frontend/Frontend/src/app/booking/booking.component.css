@@ -1,0 +1,96 @@
+/* .booking-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.train-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group > div {
+  margin-right: 10px;
+  border-radius: 4px;
+  
+}
+
+.button-group button {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-left: 50px;
+}
+
+.button-group button p {
+  margin: 0;
+}
+
+.button-group button p:first-child {
+  font-weight: bold;
+}
+
+.button-group button p:last-child {
+  font-size: 12px;
+} */
+
+
+/* CSS for the booking details section */
+.booking-details {
+  background-color:  #87ceeb;;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for each train box */
+.train-box {
+  margin-bottom: 20px;
+}
+
+.train-box tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for buttons inside the button-group div */
+.button-group button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the p elements inside the buttons */
+.button-group p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Align the buttons horizontally */
+.button-group {
+  display: flex;
+}
+
+/* Add spacing between the button groups */
+.train-box + .train-box {
+  margin-top: 10px;
+}

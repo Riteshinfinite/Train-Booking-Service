@@ -1,0 +1,127 @@
+<!-- <form class="train-details-form">
+    <div>
+      <label for="srno">Serial Number:</label>
+      <input type="number" id="srno" name="srno" [(ngModel)]="trainDetails.srno">
+    </div>
+    <div>
+      <label for="trainnumber">Train Number:</label>
+      <input type="number" id="trainnumber" name="trainnumber" [(ngModel)]="trainDetails.trainnumber">
+    </div>
+    <div>
+      <label for="trainname">Train Name:</label>
+      <input type="text" id="trainname" name="trainname" [(ngModel)]="trainDetails.trainname">
+    </div>
+    <div>
+      <label for="source">Source:</label>
+      <input type="text" id="source" name="source" [(ngModel)]="trainDetails.source">
+    </div>
+    <div>
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" name="destination" [(ngModel)]="trainDetails.destination">
+    </div>
+    <div>
+      <label for="arrTime">Arrival Time:</label>
+      <input type="text" id="arrTime" name="arrTime" [(ngModel)]="trainDetails.arrTime">
+    </div>
+    <div>
+      <label for="depTime">Departure Time:</label>
+      <input type="text" id="depTime" name="depTime" [(ngModel)]="trainDetails.depTime">
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" [(ngModel)]="trainDetails.date">
+    </div>
+    <div>
+      <label for="avlSlpNonAcgen">Available Sleeper Non-AC General:</label>
+      <input type="number" id="avlSlpNonAcgen" name="avlSlpNonAcgen" [(ngModel)]="trainDetails.avlSlpNonAcgen">
+    </div>
+    <div>
+      <label for="avlSlNonAcladies">Available Sleeper Non-AC Ladies:</label>
+      <input type="number" id="avlSlNonAcladies" name="avlSlNonAcladies" [(ngModel)]="trainDetails.avlSlNonAcladies">
+    </div>
+    <div>
+      <label for="avlSlNonAcFare">Available Sleeper Non-AC Fare:</label>
+      <input type="number" id="avlSlNonAcFare" name="avlSlNonAcFare" [(ngModel)]="trainDetails.avlSlNonAcFare">
+    </div>
+    <div>
+      <label for="avlSlAcgen">Available Sleeper AC General:</label>
+      <input type="number" id="avlSlAcgen" name="avlSlAcgen" [(ngModel)]="trainDetails.avlSlAcgen">
+    </div>
+    <div>
+      <label for="avlSLAcLadies">Available Sleeper AC Ladies:</label>
+      <input type="number" id="avlSLAcLadies" name="avlSLAcLadies" [(ngModel)]="trainDetails.avlSLAcLadies">
+    </div>
+    <div>
+      <label for="avlSlAcFare">Available Sleeper AC Fare:</label>
+      <input type="number" id="avlSlAcFare" name="avlSlAcFare" [(ngModel)]="trainDetails.avlSlAcFare">
+    </div>
+    <button (click)="addTrain()">Add Train/Update Train details</button>
+</form>
+   -->
+
+
+<body>
+  <h1>Train Details Form</h1>
+  <form class="train-details-form">
+    <div class="grid-container">
+      <div class="grid-item">
+        <label for="srno">Serial Number:</label>
+        <input type="number" id="srno" name="srno" [(ngModel)]="trainDetails.srno">
+      </div>
+      <div class="grid-item">
+        <label for="trainnumber">Train Number:</label>
+        <input type="number" id="trainnumber" name="trainnumber" [(ngModel)]="trainDetails.trainnumber">
+      </div>
+      <div class="grid-item">
+        <label for="trainname">Train Name:</label>
+        <input type="text" id="trainname" name="trainname" [(ngModel)]="trainDetails.trainname">
+      </div>
+      <div class="grid-item">
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" [(ngModel)]="trainDetails.source">
+      </div>
+      <div class="grid-item">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" [(ngModel)]="trainDetails.destination">
+      </div>
+      <div class="grid-item">
+        <label for="arrTime">Arrival Time:</label>
+        <input type="text" id="arrTime" name="arrTime" [(ngModel)]="trainDetails.arrTime">
+      </div>
+      <div class="grid-item">
+        <label for="depTime">Departure Time:</label>
+        <input type="text" id="depTime" name="depTime" [(ngModel)]="trainDetails.depTime">
+      </div>
+      <div class="grid-item">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" [(ngModel)]="trainDetails.date" [min]="getCurrentDate()">
+      </div>
+      <div class="grid-item">
+        <label for="avlSlpNonAcgen">Available Sleeper Non-AC General:</label>
+        <input type="number" id="avlSlpNonAcgen" name="avlSlpNonAcgen" [(ngModel)]="trainDetails.avlSlpNonAcgen">
+      </div>
+      <div class="grid-item">
+        <label for="avlSlNonAcladies">Available Sleeper Non-AC Ladies:</label>
+        <input type="number" id="avlSlNonAcladies" name="avlSlNonAcladies" [(ngModel)]="trainDetails.avlSlNonAcladies">
+      </div>
+      <div class="grid-item">
+        <label for="avlSlNonAcFare">Available Sleeper Non-AC Fare:</label>
+        <input type="number" id="avlSlNonAcFare" name="avlSlNonAcFare" [(ngModel)]="trainDetails.avlSlNonAcFare">
+      </div>
+      <div class="grid-item">
+        <label for="avlSlAcgen">Available Sleeper AC General:</label>
+        <input type="number" id="avlSlAcgen" name="avlSlAcgen" [(ngModel)]="trainDetails.avlSlAcgen">
+      </div>
+      <div class="grid-item">
+        <label for="avlSLAcLadies">Available Sleeper AC Ladies:</label>
+        <input type="number" id="avlSLAcLadies" name="avlSLAcLadies" [(ngModel)]="trainDetails.avlSLAcLadies">
+      </div>
+      <div class="grid-item">
+        <label for="avlSlAcFare">Available Sleeper AC Fare:</label>
+        <input type="number" id="avlSlAcFare" name="avlSlAcFare" [(ngModel)]="trainDetails.avlSlAcFare">
+      </div>
+    </div>
+    <button (click)="addTrain()">Add Train/Update Train details</button>
+  </form>
+</body>
+

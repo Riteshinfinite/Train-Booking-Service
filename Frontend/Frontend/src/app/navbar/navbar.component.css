@@ -1,0 +1,24 @@
+/* styles.css */
+
+.navbar {
+    background-color: lightgray;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .nav-link:hover {
+    background-color: lightblue;
+  }
+  
